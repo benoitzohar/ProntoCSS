@@ -5,12 +5,12 @@
  */
 
 // Core variables and mixins
-@import "variables";
-@import "mixins";
+@import "pronto/variables";
+@import "pronto/mixins";
 
 // Reset and dependencies
-@import "normalize";
-@import "print";
+@import "pronto/normalize";
+@import "pronto/print";
 
 // Core CSS
-@import "grid";
+@import "pronto/grid";
