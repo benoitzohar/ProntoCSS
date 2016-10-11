@@ -1,6 +1,22 @@
 // Variables
 
 
+//Colors
+
+$main-color:        #FC585A;
+$secondary-color:   #1682FB;
+
+//Fonts
+
+// Override this variable if you plan to use any other font than 'Quicksand' & 'Raleway', otherwise the framework will import them by default:
+$use-custom-font-families: false !default;
+
+$font-family-headers: 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family: 'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+
+$font-size-headers: 3rem; //base size for the headers (this will be the biggest, all the smaller headers will be calculated based on this)
+$font-size: 1rem; //base size for the regular fonts
+
 // Grid variables (see https://github.com/hugeinc/flexboxgrid-sass for more infos)
 
 // Set the number of columns you want to use on your layout.

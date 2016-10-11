@@ -12,6 +12,7 @@
  */
 /* Document
    ========================================================================== */
+@import 'https://fonts.googleapis.com/css?family=Quicksand|Raleway';
 html {
   font-family: sans-serif;
   /* 1 */
@@ -2371,3 +2372,37 @@ template {
     order: -1; }
   .last-lg {
     order: 1; } }
+
+body {
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem; }
+
+h1 {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1682FB;
+  font-size: 2.8rem; }
+
+h2 {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1682FB;
+  font-size: 2.6rem; }
+
+h3 {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1682FB;
+  font-size: 2.4rem; }
+
+h4 {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1682FB;
+  font-size: 2.2rem; }
+
+h5 {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1682FB;
+  font-size: 2rem; }
+
+h6 {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1682FB;
+  font-size: 1.8rem; }

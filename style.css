@@ -1,3 +1,32 @@
+body {
+    background-color:#eee;
+    background-image: linear-gradient(#fefefe 2px, transparent 2px),
+    linear-gradient(90deg, #fefefe 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+    background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+}
+
+.header-logo {
+    height: 211.5px;
+}
+
+.main {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+}
+
 .plain {
-    background-color: blue;
+    position: relative;
+    box-sizing: border-box;
+    min-height: 1.7rem;
+    margin-bottom: 0;
+    background: #007FFF;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0.2rem;
 }
