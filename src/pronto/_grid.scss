@@ -1,22 +1,19 @@
-//The grid is, for now, the flexboxgrid-sass (https://github.com/hugeinc/flexboxgrid-sass)
-//which is based on the amazing flexboxgrid (https://github.com/kristoferjoseph/flexboxgrid) from kristoferjoseph.
-//It needs sass-flex-mixin to work (see mixins/_flex.scss)
-
+/**
+ * Grid system
+ *
+ * The grid system is inspired by flexboxgrid-sass (https://github.com/hugeinc/flexboxgrid-sass)
+ * which is based on the amazing flexboxgrid (https://github.com/kristoferjoseph/flexboxgrid) from kristoferjoseph.
+ * It needs sass-flex-mixin to work (see mixins/_flex.scss)
+ ***/
 
 $gutter-compensation: $gutter-width * .5 * -1;
 $half-gutter-width: $gutter-width * .5;
 
-.wrapper {
+.container {
   box-sizing: border-box;
-  max-width: $flexboxgrid-max-width;
   margin: 0 auto;
-}
-
-.container-fluid {
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $outer-margin;
-  padding-left: $outer-margin;
+  padding: $outer-margin;
+  max-width: $container-max-width;
 }
 
 .row {
@@ -27,14 +24,6 @@ $half-gutter-width: $gutter-width * .5;
   @include flex-wrap(wrap);
   margin-right: $gutter-compensation;
   margin-left: $gutter-compensation;
-}
-
-.row.reverse {
-  @include flex-direction(row-reverse);
-}
-
-.col.reverse {
-  @include flex-direction(column-reverse);
 }
 
 @mixin flexboxgrid-sass-col-common {
@@ -110,24 +99,11 @@ $name: xs;
   @include justify-content(space-between);
 }
 
-.first-#{$name} {
-  order: -1;
-}
-
-.last-#{$name} {
-  order: 1;
-}
-
 
 @each $breakpoint in $breakpoints {
   $name: nth($breakpoint, 1);
   $size: nth($breakpoint, 2);
-  $container: nth($breakpoint, 3);
   @media only screen and (min-width: $size) {
-    .container {
-      width: $container;
-    }
-
     .col-#{$name} {
       @include flexboxgrid-sass-col-common;
       @include flex-basis(auto);
@@ -183,14 +159,6 @@ $name: xs;
 
     .between-#{$name} {
       @include justify-content(space-between);
-    }
-
-    .first-#{$name} {
-      order: -1;
-    }
-
-    .last-#{$name} {
-      order: 1;
     }
   }
 }

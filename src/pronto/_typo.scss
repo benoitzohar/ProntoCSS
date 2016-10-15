@@ -1,5 +1,5 @@
 //TODO: remove this import from here, maybe, since we cannot put a conditional here, add this as a "default override" tip
-@import 'https://fonts.googleapis.com/css?family=Quicksand|Raleway';
+//@import 'https://fonts.googleapis.com/css?family=Quicksand|Raleway';
 
 
 body {
@@ -10,7 +10,7 @@ body {
 @for $i from 1 through 6 {
   h#{$i} {
       font-family: $font-family-headers;
-      color: $secondary-color;
-      font-size: $font-size-headers - ($i*0.2);
+      color: $default-color;
+      font-size: $font-size-headers - ($i*0.4);
   }
 }

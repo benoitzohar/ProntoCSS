@@ -1,0 +1,9 @@
+pre {
+    background-color: rgba(238, 238, 238, 0.72);
+    padding: 20px;
+    border-radius: $border-radius;
+
+    code {
+        font-size:  $font-size - 0.1;
+    }
+}

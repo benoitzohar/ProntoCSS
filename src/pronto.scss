@@ -7,6 +7,7 @@
 // Core variables and mixins
 @import "pronto/variables";
 @import "pronto/mixins";
+@import "pronto/color";
 
 // Reset and dependencies
 @import "pronto/normalize";
@@ -15,3 +16,5 @@
 // Core CSS
 @import "pronto/grid";
 @import "pronto/typo";
+@import "pronto/code";
+@import "pronto/button";

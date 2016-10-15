@@ -4,8 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>ProntoCSS</title>
-    <link rel="stylesheet" media="all" href="dist/pronto.css">
+    <link rel="stylesheet" media="all" href="dist/pronto.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
@@ -23,192 +25,178 @@
     <div class="container main">
         <header>
             <div class="row center-xs">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <!--<h1 class="headline">ProntoCSS</h1>-->
+                <div class="col-s-12 col-m-12">
                     <img class="header-logo" src="img/prontocss.png" title="ProntoCSS" alt="ProntoCSS" />
                 </div>
             </div>
         </header>
 
+        <section class="intro-section">
+            <p>
+                ProntoCSS is a minimalist CSS framework based on flexbox and written in Sass.
+                Although you can use the minified dist version of the framework, we really suggest that you include it as a Sass dependency.
+                There are a lot of comments in the <code>pronto/_variables.scss</code> file and you should use them as much as you can.
+            </p>
+
+            <h3>Installation</h3>
+            <p>
+                There are multiple ways to get ProntoCSS:
+
+
+            </p>
+            <div class="row">
+                <div class="col-s-6 center-s">
+                    <button class="btn">View it on GitHub</button>
+                </div>
+                <div class="col-s-6 center-s">
+                    <a href="javascript:alert('TODO');" class="btn">Download the most recent version</label></a>
+                </div>
+            </div>
+            <p>
+                You can also use your favorite package manager to download the framework:
+            </p>
+            <pre><code>yarn add pronto</code></pre>
+            <pre><code>npm install --save pronto</code></pre>
+            <pre><code>bower install --save pronto</code></pre>
+
+        </section>
+
+        <hr />
+
         <section class="page-section">
-            <h2>Responsive</h2>
-            <p>Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at xs, sm, md &amp; lg viewport widths.</p>
+            <h1>The grid</h1>
+            <h2>Responsive & Fluid by default</h2>
+            <p>
+                The container is fluid by default. It will max up to 1200px until you change `$container-max-width` to an other value or to `none`.
+            </p>
+            <p>Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at s &amp; m (by default) viewport widths.</p>
             <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1">
-                    <div class="plain"></div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-8 col-lg-10">
-                    <div class="plain"></div>
-                </div>
-                <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
+                <div class="col-s-12">
                     <div class="plain"></div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1">
+                <div class="col-s-1">
                     <div class="plain"></div>
                 </div>
-                <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
+                <div class="col-s-11">
                     <div class="plain"></div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-10 col-sm-6 col-md-8 col-lg-10">
+                <div class="col-s-2">
                     <div class="plain"></div>
                 </div>
-                <div class="col-xs-2 col-sm-6 col-md-4 col-lg-2">
+                <div class="col-s-10">
+                    <div class="plain"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-s-3">
+                    <div class="plain"></div>
+                </div>
+                <div class="col-s-9">
+                    <div class="plain"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-s-4">
+                    <div class="plain"></div>
+                </div>
+                <div class="col-s-8">
+                    <div class="plain"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-s-5">
+                    <div class="plain"></div>
+                </div>
+                <div class="col-s-7">
+                    <div class="plain"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-s-6">
+                    <div class="plain"></div>
+                </div>
+                <div class="col-s-6">
                     <div class="plain"></div>
                 </div>
             </div>
             <pre><code>&lt;div class="row"&gt;
-    &lt;div class="col-xs-12
-                col-sm-8
-                col-md-6
-                col-lg-4"&gt;
-        &lt;div class="box"&gt;Responsive&lt;/div&gt;
+    &lt;div class="col-s-12 col-m-6"&gt;
+        ...
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-
-            <section class="page-section"><br>
-                <h2>Fluid</h2>
-                <p>Percent based widths allow fluid resizing of columns and rows.</p>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="plain"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-1">
-                        <div class="plain"></div>
-                    </div>
-                    <div class="col-xs-11">
-                        <div class="plain"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-2">
-                        <div class="plain"></div>
-                    </div>
-                    <div class="col-xs-10">
-                        <div class="plain"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3">
-                        <div class="plain"></div>
-                    </div>
-                    <div class="col-xs-9">
-                        <div class="plain"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4">
-                        <div class="plain"></div>
-                    </div>
-                    <div class="col-xs-8">
-                        <div class="plain"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-5">
-                        <div class="plain"></div>
-                    </div>
-                    <div class="col-xs-7">
-                        <div class="plain"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <div class="plain"></div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class="plain"></div>
-                    </div>
-                </div>
-                <pre>
-                    <code>.col-xs-6 {
-  flex-basis: 50%;
-}</code>
-</pre>
-            </section>
-            <section class="page-section">
-                <h2>Simple Syntax</h2>
-                <p>All you need to remember is row, column, content.</p><pre><code>&lt;div class="row"&gt;
-    &lt;div class="col-xs-12"&gt;
-        &lt;div class="box"&gt;12&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-            </section>
 
             <section class="page-section">
                 <h2>Offsets</h2>
                 <p>Offset a column</p>
                 <div class="row">
-                    <div class="col-xs-offset-11 col-xs-1">
+                    <div class="col-s-offset-11 col-s-1">
                         <div class="plain"></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-offset-10 col-xs-2">
+                    <div class="col-s-offset-10 col-s-2">
                         <div class="plain"></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-offset-9 col-xs-3">
+                    <div class="col-s-offset-9 col-s-3">
                         <div class="plain"></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-offset-8 col-xs-4">
+                    <div class="col-s-offset-8 col-s-4">
                         <div class="plain"></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-offset-7 col-xs-5">
+                    <div class="col-s-offset-7 col-s-5">
                         <div class="plain"></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-offset-6 col-xs-6">
+                    <div class="col-s-offset-6 col-s-6">
                         <div class="plain"></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-offset-5 col-xs-7">
+                    <div class="col-s-offset-5 col-s-7">
                         <div class="plain"></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-offset-4 col-xs-8">
+                    <div class="col-s-offset-4 col-s-8">
                         <div class="plain"></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-offset-3 col-xs-9">
+                    <div class="col-s-offset-3 col-s-9">
                         <div class="plain"></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-offset-2 col-xs-10">
+                    <div class="col-s-offset-2 col-s-10">
                         <div class="plain"></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-offset-1 col-xs-11">
+                    <div class="col-s-offset-1 col-s-11">
                         <div class="plain"></div>
                     </div>
                 </div>
-                <pre>
-                    <code>&lt;div class="row"&gt;
-    &lt;div class="col-xs-offset-3 col-xs-9"&gt;
-        &lt;div class="box"&gt;offset&lt;/div&gt;
+                <pre><code>&lt;div class="row"&gt;
+    &lt;div class="col-s-offset-3 col-s-9"&gt;
+        ...
     &lt;/div&gt;
 &lt;/div&gt;</code>
 </pre>
             </section>
             <section class="page-section">
                 <h2>Auto Width</h2>
-                <p>Add any number of auto sizing columns to a row. Let the grid figure it out.</p>
+                <p>Add any number of auto sizing columns to a row. Let the flexbox grid figure it out.</p>
                 <div class="row">
                     <div class="col-xs">
                         <div class="plain"></div>
@@ -228,34 +216,32 @@
                         <div class="plain"></div>
                     </div>
                 </div>
-                <pre>
-                    <code>&lt;div class="row"&gt;
-                &lt;div class="col-xs"&gt;
-                    &lt;div class="box"&gt;auto&lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;</code>
-            </pre>
+                <pre><code>&lt;div class="row"&gt;
+    &lt;div class="col-s"&gt;
+         ...
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
             </section>
             <section class="page-section">
                 <h2>Nested Grids</h2>
                 <p>Nest grids inside grids inside grids.</p>
                 <div class="row">
-                    <div class="col-xs-7">
+                    <div class="col-s-7">
                         <div class="box box-container">
                             <div class="row">
-                                <div class="col-xs-9">
+                                <div class="col-s-9">
                                     <div class="box-first box-container">
                                         <div class="row">
-                                            <div class="col-xs-4">
+                                            <div class="col-s-4">
                                                 <div class="box-nested"></div>
                                             </div>
-                                            <div class="col-xs-8">
+                                            <div class="col-s-8">
                                                 <div class="box-nested"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-s-3">
                                     <div class="box-first box-container">
                                         <div class="row">
                                             <div class="col-xs">
@@ -267,16 +253,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-5">
+                    <div class="col-s-5">
                         <div class="box box-container">
                             <div class="row">
-                                <div class="col-xs-12">
+                                <div class="col-s-12">
                                     <div class="box-first box-container">
                                         <div class="row">
-                                            <div class="col-xs-6">
+                                            <div class="col-s-6">
                                                 <div class="box-nested"></div>
                                             </div>
-                                            <div class="col-xs-6">
+                                            <div class="col-s-6">
                                                 <div class="box-nested"></div>
                                             </div>
                                         </div>
@@ -286,8 +272,7 @@
                         </div>
                     </div>
                 </div>
-                <pre>
-                    <code>&lt;div class="row"&gt;
+                <pre><code>&lt;div class="row"&gt;
     &lt;div class="col-xs"&gt;
         &lt;div class="box"&gt;
             &lt;div class="row"&gt;
@@ -303,100 +288,55 @@
             <section class="page-section">
                 <h2>Alignment</h2>
                 <p>Add classes to align elements to the start or end of a row as well as the top, bottom, or center of a column</p>
+
                 <h3><code>.start-</code></h3>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="box box-container">
-                            <div class="row start-xs">
-                                <div class="col-xs-6">
-                                    <div class="box-nested"></div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="row start-s">
+                    <div class="col-s-4">
+                        <div class="plain"></div>
                     </div>
                 </div>
-                <pre>
-                    <code>&lt;div class="row start-xs"&gt;
-                &lt;div class="col-xs-6"&gt;
-                    &lt;div class="box"&gt;
-                        start
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
+                <pre><code>&lt;div class="row start-s"&gt;
+    &lt;div class="col-s-4"&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
             </code></pre>
+
             <h3><code>.center-</code></h3>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="box box-container">
-                            <div class="row center-xs">
-                                <div class="col-xs-6">
-                                    <div class="box-nested"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row center-s">
+                <div class="col-s-4">
+                    <div class="plain"></div>
                 </div>
-                <pre>
-                    <code>&lt;div class="row center-xs"&gt;
-    &lt;div class="col-xs-6"&gt;
-        &lt;div class="box"&gt;
-            start
-        &lt;/div&gt;
+            </div>
+                <pre><code>&lt;div class="row center-s"&gt;
+    &lt;div class="col-s-4"&gt;
+        ...
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
                 <h3><code>.end-</code></h3>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="box box-container">
-                            <div class="row end-xs">
-                                <div class="col-xs-6">
-                                    <div class="box-nested"></div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="row end-xs">
+                    <div class="col-s-4">
+                        <div class="plain"></div>
                     </div>
                 </div>
-                <pre>
-                    <code>&lt;div class="row end-xs"&gt;
-    &lt;div class="col-xs-6"&gt;
-        &lt;div class="box"&gt;
-            end
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-                <p>Here is an example of using the modifiers in conjunction to acheive different alignment at different viewport sizes.</p>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="box box-container">
-                            <div class="row center-xs end-sm start-lg">
-                                <div class="col-xs-6">
-                                    <div class="box-nested"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>Example<pre><code>&lt;div class="row center-xs end-sm start-lg"&gt;
-    &lt;div class="col-xs-6"&gt;
-        &lt;div class="box"&gt;
-            All together now
-        &lt;/div&gt;
+                <pre><code>&lt;div class="row end-s"&gt;
+    &lt;div class="col-s-4"&gt;
+        ...
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
                 <h3><code>.top-</code></h3>
-                <div class="row top-xs">
-                    <div class="col-xs-6">
+                <div class="row top-s">
+                    <div class="col-s-6">
                         <div class="box-large"></div>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-s-6">
                         <div class="box"></div>
                     </div>
                 </div>
-                <pre>
-                    <code>&lt;div class="row top-xs"&gt;
-    &lt;div class="col-xs-6"&gt;
+                <pre><code>&lt;div class="row top-xs"&gt;
+    &lt;div class="col-s-6"&gt;
         &lt;div class="box"&gt;
             top
         &lt;/div&gt;
@@ -405,16 +345,15 @@
 </code></pre>
                 <h3><code>.middle-</code></h3>
                 <div class="row middle-xs">
-                    <div class="col-xs-6">
+                    <div class="col-s-6">
                         <div class="box-large"></div>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-s-6">
                         <div class="box"></div>
                     </div>
                 </div>
-                <pre>
-                    <code>&lt;div class="row middle-xs"&gt;
-    &lt;div class="col-xs-6"&gt;
+                <pre><code>&lt;div class="row middle-xs"&gt;
+    &lt;div class="col-s-6"&gt;
         &lt;div class="box"&gt;
             center
         &lt;/div&gt;
@@ -423,16 +362,15 @@
 </code></pre>
                 <h3><code>.bottom-</code></h3>
                 <div class="row bottom-xs">
-                    <div class="col-xs-6">
+                    <div class="col-s-6">
                         <div class="box-large"></div>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-s-6">
                         <div class="box"></div>
                     </div>
                 </div>
-                <pre>
-                    <code>&lt;div class="row bottom-xs"&gt;
-    &lt;div class="col-xs-6"&gt;
+                <pre><code>&lt;div class="row bottom-xs"&gt;
+    &lt;div class="col-s-6"&gt;
         &lt;div class="box"&gt;
             bottom
         &lt;/div&gt;
@@ -446,35 +384,34 @@
                 <p>Add classes to distribute the contents of a row or column.</p>
                 <h3><code>.around-</code></h3>
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div class="col-s-12">
                         <div class="box box-container">
                             <div class="row around-xs">
-                                <div class="col-xs-2">
+                                <div class="col-s-2">
                                     <div class="box-nested"></div>
                                 </div>
-                                <div class="col-xs-2">
+                                <div class="col-s-2">
                                     <div class="box-nested"></div>
                                 </div>
-                                <div class="col-xs-2">
+                                <div class="col-s-2">
                                     <div class="box-nested"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <pre>
-                    <code>&lt;div class="row around-xs"&gt;
-    &lt;div class="col-xs-2"&gt;
+                <pre><code>&lt;div class="row around-xs"&gt;
+    &lt;div class="col-s-2"&gt;
         &lt;div class="box"&gt;
             around
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="col-xs-2"&gt;
+    &lt;div class="col-s-2"&gt;
         &lt;div class="box"&gt;
             around
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="col-xs-2"&gt;
+    &lt;div class="col-s-2"&gt;
         &lt;div class="box"&gt;
             around
         &lt;/div&gt;
@@ -483,184 +420,36 @@
 </code></pre>
                 <h3><code>.between-</code></h3>
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div class="col-s-12">
                         <div class="box box-container">
                             <div class="row between-xs">
-                                <div class="col-xs-2">
+                                <div class="col-s-2">
                                     <div class="box-nested"></div>
                                 </div>
-                                <div class="col-xs-2">
+                                <div class="col-s-2">
                                     <div class="box-nested"></div>
                                 </div>
-                                <div class="col-xs-2">
+                                <div class="col-s-2">
                                     <div class="box-nested"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <pre>
-                    <code>&lt;div class="row between-xs"&gt;
-    &lt;div class="col-xs-2"&gt;
+                <pre><code>&lt;div class="row between-xs"&gt;
+    &lt;div class="col-s-2"&gt;
         &lt;div class="box"&gt;
             between
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="col-xs-2"&gt;
+    &lt;div class="col-s-2"&gt;
         &lt;div class="box"&gt;
             between
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="col-xs-2"&gt;
+    &lt;div class="col-s-2"&gt;
         &lt;div class="box"&gt;
             between
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
-            </section>
-            <section class="page-section">
-                <h2>Reordering</h2>
-                <p>Add classes to reorder columns.</p>
-                <h3><code>.first-</code></h3>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="box box-container">
-                            <div class="row">
-                                <div class="col-xs-2">
-                                    <div class="box-first">1</div>
-                                </div>
-                                <div class="col-xs-2">
-                                    <div class="box-first">2</div>
-                                </div>
-                                <div class="col-xs-2">
-                                    <div class="box-first">3</div>
-                                </div>
-                                <div class="col-xs-2">
-                                    <div class="box-first">4</div>
-                                </div>
-                                <div class="col-xs-2">
-                                    <div class="box-first">5</div>
-                                </div>
-                                <div class="col-xs-2 first-xs">
-                                    <div class="box-nested">6</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <pre>
-                    <code>&lt;div class="row"&gt;
-    &lt;div class="col-xs-2"&gt;
-        &lt;div class="box"&gt;
-            1
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col-xs-2"&gt;
-        &lt;div class="box"&gt;
-            2
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col-xs-2 first-xs"&gt;
-        &lt;div class="box"&gt;
-            3
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-                <h3><code>.last-</code></h3>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="box box-container">
-                            <div class="row">
-                                <div class="col-xs-2 last-xs">
-                                    <div class="box-nested">1</div>
-                                </div>
-                                <div class="col-xs-2">
-                                    <div class="box-first">2</div>
-                                </div>
-                                <div class="col-xs-2">
-                                    <div class="box-first">3</div>
-                                </div>
-                                <div class="col-xs-2">
-                                    <div class="box-first">4</div>
-                                </div>
-                                <div class="col-xs-2">
-                                    <div class="box-first">5</div>
-                                </div>
-                                <div class="col-xs-2">
-                                    <div class="box-first">6</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <pre>
-                    <code>&lt;div class="row"&gt;
-    &lt;div class="col-xs-2 last-xs"&gt;
-        &lt;div class="box"&gt;
-            1
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col-xs-2"&gt;
-        &lt;div class="box"&gt;
-            2
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col-xs-2"&gt;
-        &lt;div class="box"&gt;
-            3
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
-            </section>
-            <section class="page-section">
-                <h2>Reversing</h2>
-                <h3><code>.reverse</code></h3>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="box box-container">
-                            <div class="row reverse">
-                                <div class="col-xs-2">
-                                    <div class="box-nested">1</div>
-                                </div>
-                                <div class="col-xs-2">
-                                    <div class="box-nested">2</div>
-                                </div>
-                                <div class="col-xs-2">
-                                    <div class="box-nested">3</div>
-                                </div>
-                                <div class="col-xs-2">
-                                    <div class="box-nested">4</div>
-                                </div>
-                                <div class="col-xs-2">
-                                    <div class="box-nested">5</div>
-                                </div>
-                                <div class="col-xs-2">
-                                    <div class="box-nested">6</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <pre>
-                    <code>&lt;div class="row reverse"&gt;
-    &lt;div class="col-xs-2"&gt;
-        &lt;div class="box"&gt;
-            1
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col-xs-2"&gt;
-        &lt;div class="box"&gt;
-            2
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col-xs-2"&gt;
-        &lt;div class="box"&gt;
-            3
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -668,7 +457,6 @@
 </pre>
             </section>
 
-        </section>
 
     </div>
 

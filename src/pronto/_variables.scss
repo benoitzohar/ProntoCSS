@@ -1,12 +1,17 @@
 // Variables
 
+$border-radius: 2px;
 
-//Colors
+/**
+ * Colors
+ **/
 
-$main-color:        #FC585A;
-$secondary-color:   #1682FB;
+$colors: #FC585A #1682FB !default;
+$default-color: nth($colors, 2) !default;
 
-//Fonts
+/**
+ * Fonts
+ **/
 
 // Override this variable if you plan to use any other font than 'Quicksand' & 'Raleway', otherwise the framework will import them by default:
 $use-custom-font-families: false !default;
@@ -17,7 +22,12 @@ $font-family: 'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
 $font-size-headers: 3rem; //base size for the headers (this will be the biggest, all the smaller headers will be calculated based on this)
 $font-size: 1rem; //base size for the regular fonts
 
-// Grid variables (see https://github.com/hugeinc/flexboxgrid-sass for more infos)
+/**
+ * Grid variables
+ * (see https://github.com/hugeinc/flexboxgrid-sass for more infos)
+ **/
+
+$container-max-width: none !default; //use 1200px if you want to fix the width of the layout for large screens
 
 // Set the number of columns you want to use on your layout.
 $grid-columns: 12 !default;
@@ -25,11 +35,9 @@ $grid-columns: 12 !default;
 $gutter-width: 1rem !default;
 // Set a margin for the container sides.
 $outer-margin: 2rem !default;
-// Create or remove breakpoints for your project
+// Create or remove grid breakpoints for your project
 // Syntax:
-// name SIZErem,
+// name {Size}rem
 $breakpoints:
-  sm 48em 46rem,
-  md 62em 61rem,
-  lg 75em 71rem !default;
-$flexboxgrid-max-width: 1200px !default;
+  s 0em,
+  m 62em !default;
