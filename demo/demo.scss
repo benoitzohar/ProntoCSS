@@ -41,9 +41,31 @@ body {
     margin-bottom: 0;
     background: nth($colors, 2);
     border: 1px solid #FFF;
-    border-radius: 2px;
+    border-radius: $border-radius;
     overflow: hidden;
     text-align: center;
     color: #fff;
     margin-bottom: 0.2rem;
+}
+
+.box {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 2rem;
+    margin-bottom: 0;
+    background: transparentize(nth($colors, 2), 0.4);
+    border: 1px solid #FFF;
+    border-radius: $border-radius;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    padding: 0.2rem;
+
+    .plain {
+        margin-bottom: 0;
+    }
+}
+
+.box-high {
+    height: 5em;
 }

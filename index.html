@@ -198,21 +198,21 @@
                 <h2>Auto Width</h2>
                 <p>Add any number of auto sizing columns to a row. Let the flexbox grid figure it out.</p>
                 <div class="row">
-                    <div class="col-xs">
+                    <div class="col-s">
                         <div class="plain"></div>
                     </div>
-                    <div class="col-xs">
+                    <div class="col-s">
                         <div class="plain"></div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs">
+                    <div class="col-s">
                         <div class="plain"></div>
                     </div>
-                    <div class="col-xs">
+                    <div class="col-s">
                         <div class="plain"></div>
                     </div>
-                    <div class="col-xs">
+                    <div class="col-s">
                         <div class="plain"></div>
                     </div>
                 </div>
@@ -244,7 +244,7 @@
                                 <div class="col-s-3">
                                     <div class="box-first box-container">
                                         <div class="row">
-                                            <div class="col-xs">
+                                            <div class="col-s">
                                                 <div class="box-nested"></div>
                                             </div>
                                         </div>
@@ -273,10 +273,10 @@
                     </div>
                 </div>
                 <pre><code>&lt;div class="row"&gt;
-    &lt;div class="col-xs"&gt;
+    &lt;div class="col-s"&gt;
         &lt;div class="box"&gt;
             &lt;div class="row"&gt;
-                &lt;div class="col-xs"&gt;
+                &lt;div class="col-s"&gt;
                     &lt;div class="box"&gt;auto&lt;/div&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
@@ -315,7 +315,7 @@
 &lt;/div&gt;
 </code></pre>
                 <h3><code>.end-</code></h3>
-                <div class="row end-xs">
+                <div class="row end-s">
                     <div class="col-s-4">
                         <div class="plain"></div>
                     </div>
@@ -329,51 +329,45 @@
                 <h3><code>.top-</code></h3>
                 <div class="row top-s">
                     <div class="col-s-6">
-                        <div class="box-large"></div>
+                        <div class="box box-high"></div>
                     </div>
                     <div class="col-s-6">
                         <div class="box"></div>
                     </div>
                 </div>
-                <pre><code>&lt;div class="row top-xs"&gt;
+                <pre><code>&lt;div class="row top-s"&gt;
     &lt;div class="col-s-6"&gt;
-        &lt;div class="box"&gt;
-            top
-        &lt;/div&gt;
+        ...
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
                 <h3><code>.middle-</code></h3>
-                <div class="row middle-xs">
+                <div class="row middle-s">
                     <div class="col-s-6">
-                        <div class="box-large"></div>
+                        <div class="box box-high"></div>
                     </div>
                     <div class="col-s-6">
                         <div class="box"></div>
                     </div>
                 </div>
-                <pre><code>&lt;div class="row middle-xs"&gt;
+                <pre><code>&lt;div class="row middle-s"&gt;
     &lt;div class="col-s-6"&gt;
-        &lt;div class="box"&gt;
-            center
-        &lt;/div&gt;
+        ...
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
                 <h3><code>.bottom-</code></h3>
-                <div class="row bottom-xs">
+                <div class="row bottom-s">
                     <div class="col-s-6">
-                        <div class="box-large"></div>
+                        <div class="box box-high"></div>
                     </div>
                     <div class="col-s-6">
                         <div class="box"></div>
                     </div>
                 </div>
-                <pre><code>&lt;div class="row bottom-xs"&gt;
+                <pre><code>&lt;div class="row bottom-s"&gt;
     &lt;div class="col-s-6"&gt;
-        &lt;div class="box"&gt;
-            bottom
-        &lt;/div&gt;
+        ...
     &lt;/div&gt;
 &lt;/div&gt;
 </code>
@@ -385,72 +379,60 @@
                 <h3><code>.around-</code></h3>
                 <div class="row">
                     <div class="col-s-12">
-                        <div class="box box-container">
-                            <div class="row around-xs">
+                        <div class="box">
+                            <div class="row around-s">
                                 <div class="col-s-2">
-                                    <div class="box-nested"></div>
+                                    <div class="plain"></div>
                                 </div>
                                 <div class="col-s-2">
-                                    <div class="box-nested"></div>
+                                    <div class="plain"></div>
                                 </div>
                                 <div class="col-s-2">
-                                    <div class="box-nested"></div>
+                                    <div class="plain"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <pre><code>&lt;div class="row around-xs"&gt;
+                <pre><code>&lt;div class="row around-s"&gt;
     &lt;div class="col-s-2"&gt;
-        &lt;div class="box"&gt;
-            around
-        &lt;/div&gt;
+        ...
     &lt;/div&gt;
     &lt;div class="col-s-2"&gt;
-        &lt;div class="box"&gt;
-            around
-        &lt;/div&gt;
+        ...
     &lt;/div&gt;
     &lt;div class="col-s-2"&gt;
-        &lt;div class="box"&gt;
-            around
-        &lt;/div&gt;
+        ...
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
                 <h3><code>.between-</code></h3>
                 <div class="row">
                     <div class="col-s-12">
-                        <div class="box box-container">
-                            <div class="row between-xs">
+                        <div class="box">
+                            <div class="row between-s">
                                 <div class="col-s-2">
-                                    <div class="box-nested"></div>
+                                    <div class="plain"></div>
                                 </div>
                                 <div class="col-s-2">
-                                    <div class="box-nested"></div>
+                                    <div class="plain"></div>
                                 </div>
                                 <div class="col-s-2">
-                                    <div class="box-nested"></div>
+                                    <div class="plain"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <pre><code>&lt;div class="row between-xs"&gt;
+                <pre><code>&lt;div class="row between-s"&gt;
     &lt;div class="col-s-2"&gt;
-        &lt;div class="box"&gt;
-            between
-        &lt;/div&gt;
+        ...
     &lt;/div&gt;
     &lt;div class="col-s-2"&gt;
-        &lt;div class="box"&gt;
-            between
-        &lt;/div&gt;
+        ...
     &lt;/div&gt;
     &lt;div class="col-s-2"&gt;
-        &lt;div class="box"&gt;
-            between
-        &lt;/div&gt;
+        ...
     &lt;/div&gt;
 &lt;/div&gt;
 </code>
