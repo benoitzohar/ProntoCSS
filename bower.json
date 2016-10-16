@@ -1,0 +1,17 @@
+{
+  "name": "prontocss",
+  "description": "ProntoCSS is a simple css framework written in SCSS that contains a simple grid, components and helps (a lot) to prepare for printing.",
+  "main": "",
+  "authors": [
+    "Benoit Zohar <benoit.zohar@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/benoitzohar/ProntoCSS",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
