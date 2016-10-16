@@ -1,3 +1,19 @@
+/**
+ *  Demo Style
+ *
+ *  This is the style used by the page at https://benoitzohar.github.io/ProntoCSS/
+ **/
+
+//Declare your own variables
+$colors: #FC585A #1682FB;
+$font-family-headers: 'Quicksand', "Helvetica Neue", Arial, sans-serif;
+$font-family: 'Raleway', "Helvetica Neue", Arial, sans-serif;
+
+//Import prontocss framework
+@import "../src/pronto";
+
+//All the demo page relative styles
+
 body {
     background-color:#eee;
     background-image: linear-gradient(#fefefe 2px, transparent 2px),
@@ -9,7 +25,9 @@ body {
 }
 
 .header-logo {
-    height: 211.5px;
+    width: 100%;
+    max-width: 348px;
+    max-height: 211.5px;
 }
 
 .main {
@@ -21,7 +39,7 @@ body {
     box-sizing: border-box;
     min-height: 1.7rem;
     margin-bottom: 0;
-    background: #007FFF;
+    background: nth($colors, 2);
     border: 1px solid #FFF;
     border-radius: 2px;
     overflow: hidden;

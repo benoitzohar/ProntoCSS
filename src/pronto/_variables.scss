@@ -13,9 +13,6 @@ $default-color: nth($colors, 2) !default;
  * Fonts
  **/
 
-// Override this variable if you plan to use any other font than 'Quicksand' & 'Raleway', otherwise the framework will import them by default:
-$use-custom-font-families: false !default;
-
 $font-family-headers: 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-family: 'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 
@@ -27,7 +24,7 @@ $font-size: 1rem; //base size for the regular fonts
  * (see https://github.com/hugeinc/flexboxgrid-sass for more infos)
  **/
 
-$container-max-width: none !default; //use 1200px if you want to fix the width of the layout for large screens
+$container-max-width: 1200px !default; //use 'none' if you want to have 100% width layout in any screen
 
 // Set the number of columns you want to use on your layout.
 $grid-columns: 12 !default;

@@ -443,7 +443,7 @@ template {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 2rem;
-  max-width: none; }
+  max-width: 1200px; }
 
 .row {
   box-sizing: border-box;
@@ -1932,7 +1932,8 @@ h6 {
 pre {
   background-color: rgba(238, 238, 238, 0.72);
   padding: 20px;
-  border-radius: 2px; }
+  border-radius: 2px;
+  overflow-y: scroll; }
   pre code {
     font-size: 0.9rem; }
 
