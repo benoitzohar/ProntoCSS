@@ -1445,11 +1445,11 @@ pre {
   display: inline-block;
   border: 1px solid #1682FB;
   background: none;
-  padding: 0.4em;
+  padding: 0.4em 0.7em;
   text-decoration: none;
   color: #1682FB;
   cursor: pointer;
-  border-radius: 2px; }
+  border-radius: 3px; }
   .btn:hover {
     background-color: #1682FB;
     color: white; }

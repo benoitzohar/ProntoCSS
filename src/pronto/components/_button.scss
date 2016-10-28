@@ -2,11 +2,11 @@
     display: inline-block;
     border: 1px solid $default-color;
     background: none;
-    padding: 0.4em;
+    padding: 0.4em 0.7em;
     text-decoration: none;
     color: $default-color;
     cursor: pointer;
-    border-radius: $border-radius;
+    border-radius: $border-radius + 1;
 
     &:hover {
         background-color: $default-color;
