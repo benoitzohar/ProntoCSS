@@ -5,7 +5,7 @@
  **/
 
 //Declare your own variables
-$colors: #FC585A #1682FB;
+$colors: #FC585A #1682FB #FF9500 #4CD964;
 $font-family-headers: 'Quicksand', "Helvetica Neue", Arial, sans-serif;
 $font-family: 'Raleway', "Helvetica Neue", Arial, sans-serif;
 
@@ -32,11 +32,12 @@ body {
 }
 
 .plain {
+    @extend .bg;
+
     position: relative;
     box-sizing: border-box;
     min-height: 1.7rem;
     margin-bottom: 0;
-    background: nth($colors, 2);
     border: 1px solid #FFF;
     border-radius: $border-radius;
     overflow: hidden;

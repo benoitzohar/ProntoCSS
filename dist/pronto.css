@@ -3,8 +3,16 @@
  * Copyright 2016 Benoit Zohar
  * Licensed under MIT (https://github.com/benoitzohar/prontocss/blob/master/LICENSE)
  */
+/* Variables
+
+    You can override these variables by pre-setting them.
+    All the variables in this file are overridable.
+*/
 /**
  * Colors
+ **/
+/**
+ * Elements properties
  **/
 /**
  * Fonts
@@ -13,20 +21,50 @@
  * Grid variables
  * (see https://github.com/hugeinc/flexboxgrid-sass for more infos)
  **/
-/**
- *   Colors
- **/
-.color-1 {
-  color: #FC585A; }
-
-.bgcolor-1 {
-  background-color: #FC585A; }
-
-.color-2 {
+.txt {
   color: #1682FB; }
 
-.bgcolor-2 {
+.bg, span.bloc {
   background-color: #1682FB; }
+
+.brd {
+  border: 1px solid #1682FB; }
+
+.txt-black {
+  color: #000000; }
+
+.bg-black, span.bloc-black {
+  background-color: #000000; }
+
+.brd-black {
+  border: 1px solid #000000; }
+
+.txt-white {
+  color: #FFFFFF; }
+
+.bg-white, span.bloc-white {
+  background-color: #FFFFFF; }
+
+.brd-white {
+  border: 1px solid #FFFFFF; }
+
+.txt-1 {
+  color: #FC585A; }
+
+.bg-1, span.bloc-1 {
+  background-color: #FC585A; }
+
+.brd-1 {
+  border: 1px solid #FC585A; }
+
+.txt-2 {
+  color: #1682FB; }
+
+.bg-2, span.bloc-2 {
+  background-color: #1682FB; }
+
+.brd-2 {
+  border: 1px solid #1682FB; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -1403,6 +1441,9 @@ body {
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem; }
 
+p, ul > li {
+  line-height: 1.4rem; }
+
 h1 {
   font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #1682FB;
@@ -1453,3 +1494,28 @@ pre {
   .btn:hover {
     background-color: #1682FB;
     color: white; }
+
+span.bloc {
+  color: #000000;
+  padding: 0.2rem;
+  border-radius: 2px; }
+
+span.bloc-black {
+  color: #FFFFFF;
+  padding: 0.2rem;
+  border-radius: 2px; }
+
+span.bloc-white {
+  color: #000000;
+  padding: 0.2rem;
+  border-radius: 2px; }
+
+span.bloc-1 {
+  color: #000000;
+  padding: 0.2rem;
+  border-radius: 2px; }
+
+span.bloc-2 {
+  color: #000000;
+  padding: 0.2rem;
+  border-radius: 2px; }

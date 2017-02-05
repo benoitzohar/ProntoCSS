@@ -1,12 +1,18 @@
-/**
- *   Colors
- **/
+//
+// Colors
+//
 
- @for $i from 1 through length($colors) {
-   .color-#{$i} {
-     color: nth($colors, $i);
-   }
-   .bgcolor-#{$i} {
-       background-color: nth($colors, $i);
-   }
- }
+//properties for each color
+@each $title, $color in $internal-colors {
+    .txt#{$title} {
+        color: $color;
+    }
+
+    .bg#{$title} {
+        background-color: $color;
+    }
+
+    .brd#{$title} {
+        border: $border-size $border-type $color;
+    }
+}

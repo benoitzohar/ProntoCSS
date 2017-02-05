@@ -29,7 +29,7 @@ gulp.task('serve', ['demo', 'sass'], function() {
 // Compile sass into CSS
 gulp.task('sass', function() {
     return gulp.src(src.scss)
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(dest))
         .pipe(rename({
             suffix: '.min'
@@ -43,7 +43,7 @@ gulp.task('sass', function() {
 // Compile demo files
 gulp.task('demo', function() {
     return gulp.src(src.demo)
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(rename({
             suffix: '.min'
         }))

@@ -64,6 +64,60 @@
         <hr />
 
         <section class="page-section">
+            <h1>The basics</h1>
+            <p>ProntoCSS has been created to allow a fast usage with standard variables <b>or</b> a completely customizable experience: every property has a class that can be used in Sass or in Html. </p>
+        </section>
+
+        <hr />
+
+        <section class="page-section">
+            <h1>The colors</h1>
+            <h2>Default colors</h2>
+            <p>
+                Default base colors are <span class="bloc-1">#FC585A</span> and <span class="bloc-2">#1682FB</span>.
+                <br /><br />
+                The default color will be the second one (unless you change it in <code>$default-color</code>).
+                <br /><br />
+                For convenience, we added <span class="bloc-black">black</span>, <span class="bloc-white brd-black">white</span>.
+                <br /><br />
+                Here is the use for the default color :
+
+                <ul>
+                     <li>
+                        <code>.bg</code> will change the background with the default color
+                    </li>
+                    <li>
+                        <code>.txt</code> will change the text with the default color
+                    </li>
+                    <li>
+                        <code>.brd</code> will add a border with the default color
+                    </li>
+                </ul>
+
+                You can also add suffixes to all these properties to change the color:
+                <ul>
+                     <li>
+                        <code>.bg-white</code> will set a white background
+                    </li>
+                    <li>
+                        <code>.bg-black</code> will set a black background
+                    </li>
+                    <li>
+                        <code>.bg-1</code> will set a background with the first color (by default <span class="bloc-1">#FC585A</span>)
+                    </li>
+                </ul>
+
+            </p>
+            <h2>Custom colors</h2>
+            <p>
+                Black and white will always exist but you can add as many colors as you want, then just refer to them using their index, like <span class="bloc-4"><code>.bg-4</code></span> if you have 4 colors in the <code>$colors</code> Sass variable.
+            </p>
+        </section>
+
+
+        <hr />
+
+        <section class="page-section">
             <h1>The grid</h1>
             <h2>Responsive &amp; Fluid by default</h2>
             <p>

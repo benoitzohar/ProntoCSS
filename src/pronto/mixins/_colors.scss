@@ -1,0 +1,7 @@
+@function dynamic-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return $black-color; // Lighter backgrund, return dark color
+  } @else {
+    @return $white-color; // Darker background, return light color
+  }
+}

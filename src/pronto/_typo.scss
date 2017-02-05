@@ -4,6 +4,10 @@ body {
     font-size: $font-size;
 }
 
+p, ul > li {
+    line-height: 1.4rem;
+}
+
 @for $i from 1 through 6 {
   h#{$i} {
       font-family: $font-family-headers;

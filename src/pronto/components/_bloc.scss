@@ -1,0 +1,13 @@
+//
+// Inline bloc: a bloc applied to a span
+//
+
+//properties for each color
+@each $title, $color in $internal-colors {
+    span.bloc#{$title} {
+        @extend .bg#{$title};
+        color: dynamic-text-color($color);
+        padding: $inline-padding;
+        border-radius: $border-radius;
+    }
+}
