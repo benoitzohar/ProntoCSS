@@ -1,7 +1,7 @@
 .btn {
 
     display: inline-block;
-    border: 1px solid $default-color;
+    border: $border-size $border-type $default-color;
     background: none;
     padding: 0.4em 0.7em;
     text-decoration: none;
