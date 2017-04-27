@@ -1,4 +1,6 @@
-![ProntoCSS logo](https://benoitzohar.github.io/ProntoCSS/img/prontocss.png)
+<p align="center">
+<img alt="ProntoCSS logo" src="https://benoitzohar.github.io/ProntoCSS/img/prontocss.png" height="200">
+</p>
 
 ProntoCSS
 =========
