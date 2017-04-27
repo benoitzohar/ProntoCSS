@@ -20,9 +20,9 @@ $main-color: nth($colors, 1) !default;
 //the default color will be the second one and will be used for buttons and subtitles
 $default-color: nth($colors, 2) !default;
 //You can customize the black color to something grayer if you want
-$black-color: #000000;
+$black-color: #000000 !default;
 // Same goes for the white color
-$white-color: #FFFFFF;
+$white-color: #FFFFFF !default;
 
 /**
  * Elements properties
@@ -30,8 +30,8 @@ $white-color: #FFFFFF;
 $border-size: 1px !default;
 $border-type: solid !default;
 $border-radius: 2px !default;
-$padding: 1rem;
-$inline-padding: .2rem;
+$padding: 1rem !default;
+$inline-padding: .2rem !default;
 
 /**
  * Fonts
@@ -40,8 +40,8 @@ $inline-padding: .2rem;
 $font-family-headers: "Helvetica Neue", Arial, sans-serif !default;
 $font-family: "Helvetica Neue", Arial, sans-serif !default;
 
-$font-size-headers: 3rem; //base size for the headers (this will be the biggest, all the smaller headers will be calculated based on this)
-$font-size: 1rem; //base size for the regular fonts
+$font-size-headers: 3rem !default; //base size for the headers (this will be the biggest, all the smaller headers will be calculated based on this)
+$font-size: 1rem !default; //base size for the regular fonts
 
 /**
  * Grid variables
