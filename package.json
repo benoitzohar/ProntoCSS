@@ -1,6 +1,6 @@
 {
   "name": "prontocss",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "ProntoCSS is a simple css framework written in SCSS that contains a simple grid, components and helps (a lot) to prepare for printing.",
   "scripts": {
     "start": "gulp serve"
