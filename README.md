@@ -1,3 +1,5 @@
+![ProntoCSS logo](https://benoitzohar.github.io/ProntoCSS/img/prontocss.png)
+
 ProntoCSS
 =========
 
