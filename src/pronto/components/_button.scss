@@ -1,6 +1,7 @@
 .btn {
 
     display: inline-block;
+    font-family: $font-family;
     border: $border-size $border-type $default-color;
     background: none;
     padding: 0.4em 0.7em;

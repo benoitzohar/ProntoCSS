@@ -1438,39 +1438,39 @@ template {
     justify-content: space-between; } }
 
 body {
-  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem; }
 
 p, ul > li {
   line-height: 1.4rem; }
 
 h1 {
-  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   color: #1682FB;
   font-size: 2.6rem; }
 
 h2 {
-  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   color: #1682FB;
   font-size: 2.2rem; }
 
 h3 {
-  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   color: #1682FB;
   font-size: 1.8rem; }
 
 h4 {
-  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   color: #1682FB;
   font-size: 1.4rem; }
 
 h5 {
-  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   color: #1682FB;
   font-size: 1rem; }
 
 h6 {
-  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   color: #1682FB;
   font-size: 0.6rem; }
 
@@ -1484,6 +1484,7 @@ pre {
 
 .btn {
   display: inline-block;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   border: 1px solid #1682FB;
   background: none;
   padding: 0.4em 0.7em;
@@ -1519,3 +1520,6 @@ span.bloc-2 {
   color: #000000;
   padding: 0.2rem;
   border-radius: 2px; }
+
+input {
+  font-family: "Helvetica Neue", Arial, sans-serif; }
